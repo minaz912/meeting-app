@@ -48,7 +48,6 @@ import { SocketBrowser } from './sockets/socket.browser';
 import { SocketDriver } from './sockets/socket.driver';
 import { SocketConnection } from './sockets/socket.connections';
 import { RealTime } from './services/core/real.time';
-import { UserApi } from './services/custom/User';
 import { MeetingApi } from './services/custom/Meeting';
 import { ParticipantApi } from './services/custom/Participant';
 /**
@@ -82,7 +81,6 @@ export class SDKBrowserModule {
         JSONSearchParams,
         SDKModels,
         RealTime,
-        UserApi,
         MeetingApi,
         ParticipantApi,
         internalStorageProvider,
