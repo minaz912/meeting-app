@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+
+    <button md-button>
+    <md-icon>home</md-icon>
+        Meeting Manager</button>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+        <button md-button><md-icon>add_circle</md-icon>New Meeting</button>
+        <button md-button [mdMenuTriggerFor]="menu2" fxHide="false">
+          <md-icon>account_circle</md-icon>Account
+        </button>
+    </div>
+    <button md-button [mdMenuTriggerFor]="menu" fxHide="false" fxHide.gt-sm>
+     <md-icon>menu</md-icon>
+    </button>
+
+</md-toolbar>
+<md-menu x-position="before" #menu="mdMenu">
+  <button md-menu-item><md-icon>add_circle</md-icon>New Meeting</button>
+  <button md-menu-item><md-icon>account_circle</md-icon>Account</button>
+  <button md-menu-item><md-icon>power_settings_new</md-icon>Logout</button>
+</md-menu>
+
+<md-menu x-position="before" #menu2="mdMenu">
+  <button md-menu-item><md-icon>power_settings_new</md-icon>Logout</button>
+</md-menu>
