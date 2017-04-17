@@ -14,13 +14,15 @@ import { SDKBrowserModule } from './shared/sdk';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CreateMeetingComponent } from './create-meeting/create-meeting.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CreateMeetingComponent
+    CreateMeetingComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
