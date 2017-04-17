@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './shared/material/material.module';
 import { SDKBrowserModule } from './shared/sdk';
 
@@ -25,7 +26,8 @@ import 'hammerjs';
     HttpModule,
     MaterialModule,
     FlexLayoutModule,
-    SDKBrowserModule.forRoot()
+    AppRoutingModule,
+    SDKBrowserModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
