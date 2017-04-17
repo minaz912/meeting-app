@@ -12,12 +12,15 @@ import { MaterialModule } from './shared/material/material.module';
 import { SDKBrowserModule } from './shared/sdk';
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { CreateMeetingComponent } from './create-meeting/create-meeting.component';
 
-import 'hammerjs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    CreateMeetingComponent
   ],
   imports: [
     BrowserModule,
